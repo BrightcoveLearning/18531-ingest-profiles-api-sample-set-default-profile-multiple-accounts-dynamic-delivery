@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ingest Profiles API Sample: Set Default Profile (Dynamic Delivery)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/source-code-pro" type="text/css"/>
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <section class="bcls-section">
+  <h2 id="Set_default_profile_app">Set default profile app</h2>
+
+  <p>You can use the form below to set the default ingest profile for one or more accounts.</p>
+
+  <fieldset>
+    <legend>Input</legend>
+
+    <p>If you do not enter account information, a Brightcove sample account will be used.</p>
+
+    <p>Account id: <input id="account_id_input" type="text" placeholder="1752604059001" /></p>
+
+    <p>Client id: <input id="client_id_input" type="text" size="60" placeholder="c5d0a622-5479-46d8-8d8a-5f034b943fab" /></p>
+
+    <p>Client secret: <input id="client_secret_input" type="text" size="60" placeholder="w7NQYu0vUloM4GYYy2SXAxrvyFpt8fwI35qAFZcS13-VIgs0itwKNsAwHOS80sOWKJ1BUwHIvSFG" /></p>
+
+    <p><button class="bcls-button" id="get_profiles">Get Account Profiles</button></p>
+
+    <p>Profile to set as default: <select name="profile_select" id="profile_select" style="width:200px;"></select></p>
+
+    <p><button class="bcls-button" id="set_default_profile" disabled="disabled" style="opacity:.6;">Set the Selected Profile as Default</button></p>
+
+    <p><button class="bcls-button" id="update_default_profile" disabled="disabled" style="opacity:.6;">Set the Selected Profile as Default</button></p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Output</legend>
+
+    <div id="logger" style="color:rgb(237, 104, 38)">
+      <p>Waiting for input...</p>
+    </div>
+
+    <h4>Current API request</h4>
+
+    <pre>
+  <code id="api_request_display">API request will appear here...</code></pre>
+
+    <h4>Current API request body</h4>
+
+    <pre>
+  <code id="api_request_body_display">API request body will appear here...</code></pre>
+
+    <h4>Response data</h4>
+
+    <pre>
+  <code id="api_response" style="width:95%;height:30em;">Response will appear here...</code></pre>
+  </fieldset>
+</section>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
